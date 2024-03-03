@@ -1,0 +1,16 @@
+<table>
+<table border="1">
+    <th>Room Number</th>
+    <th>Vacant Beds</th>
+    {%for i in room%}
+    <tr>
+        <td>{{i.room_no}}</td>
+        {%if i.vacant%}
+        <td>{{i.vacant}}</td>
+        {%else%}
+        <td>FULL</td>
+        {%endif%}
+    </tr>
+    {%endfor%}
+
+</table>

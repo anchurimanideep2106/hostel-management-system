@@ -1,0 +1,10 @@
+<table border="1">
+    <th>email</th>
+    <th>password</th>
+    {%for i in login1%}
+    <tr>
+        <td>{{i.email}}</td>
+        <td>{{i.password}}</td>
+    </tr>
+    {%endfor%}
+</table>

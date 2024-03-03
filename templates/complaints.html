@@ -1,0 +1,14 @@
+<table>
+<table border=1>
+    <th>Student name</th>
+    <th>Student Email</th>
+    <th>Complaint</th>
+    {%for i in com%}
+    <tr>
+        <td>{{i.student}}</td>
+        <td>{{i.student.email}}</td>
+        <td>{{i.complaint}}</td>
+        
+    </tr>
+    {%endfor%}
+</table>
